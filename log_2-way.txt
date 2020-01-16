@@ -1,0 +1,147 @@
+----------------------------
+2th Generation Begin!  Strength = 2 , maxOccurrence = 1 , maxLength = 10
+10 Events: 
+  [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10]
+# of 2-way permutations (with repetition <=1) =  90
+  [[e1, e2], [e1, e3], [e1, e4], [e1, e5], [e1, e6], [e1, e7], [e1, e8], [e1, e9], [e1, e10], [e2, e1], [e2, e3], [e2, e4], [e2, e5], [e2, e6], [e2, e7], [e2, e8], [e2, e9], [e2, e10], [e3, e1], [e3, e2], [e3, e4], [e3, e5], [e3, e6], [e3, e7], [e3, e8], [e3, e9], [e3, e10], [e4, e1], [e4, e2], [e4, e3], [e4, e5], [e4, e6], [e4, e7], [e4, e8], [e4, e9], [e4, e10], [e5, e1], [e5, e2], [e5, e3], [e5, e4], [e5, e6], [e5, e7], [e5, e8], [e5, e9], [e5, e10], [e6, e1], [e6, e2], [e6, e3], [e6, e4], [e6, e5], [e6, e7], [e6, e8], [e6, e9], [e6, e10], [e7, e1], [e7, e2], [e7, e3], [e7, e4], [e7, e5], [e7, e6], [e7, e8], [e7, e9], [e7, e10], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e5], [e9, e6], [e9, e7], [e9, e8], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e5], [e10, e6], [e10, e7], [e10, e8], [e10, e9]]
+Repetition Constraints: 
+  0 <= Event.# <= 1
+Length Constraints: 
+  1 <= Len <= 10
+Sequencing Constraints: 
+  _ e1 && e1 ,m e2 && e8 ,~ e1 && e1 ,m {e3, e7} && e3 ,~ e7 && e7 ,~ e3 && {e4, e9, e10} ,~ {e2, e3, e7} && e4 ,m {e5, e6} && e6 ,~ e5 && {e2, e3} ,m {e4, e9, e10} && e4 ,~ {e9, e10} && e9 ,~ {e4, e10} && e10 ,~ {e4, e9}
+
+
+# of uncovered target sequences = 90
+[[e1, e2], [e1, e3], [e1, e4], [e1, e5], [e1, e6], [e1, e7], [e1, e8], [e1, e9], [e1, e10], [e2, e1], [e2, e3], [e2, e4], [e2, e5], [e2, e6], [e2, e7], [e2, e8], [e2, e9], [e2, e10], [e3, e1], [e3, e2], [e3, e4], [e3, e5], [e3, e6], [e3, e7], [e3, e8], [e3, e9], [e3, e10], [e4, e1], [e4, e2], [e4, e3], [e4, e5], [e4, e6], [e4, e7], [e4, e8], [e4, e9], [e4, e10], [e5, e1], [e5, e2], [e5, e3], [e5, e4], [e5, e6], [e5, e7], [e5, e8], [e5, e9], [e5, e10], [e6, e1], [e6, e2], [e6, e3], [e6, e4], [e6, e5], [e6, e7], [e6, e8], [e6, e9], [e6, e10], [e7, e1], [e7, e2], [e7, e3], [e7, e4], [e7, e5], [e7, e6], [e7, e8], [e7, e9], [e7, e10], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e5], [e9, e6], [e9, e7], [e9, e8], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e5], [e10, e6], [e10, e7], [e10, e8], [e10, e9]]
+Starting Phase Time : 0.003 sec
+Extension Phase Time : 0.018 sec
+Generated Sequence : 
+[e1, e2, e3, e4, e5, e6, e8]
+Covered target sequences : 
+[[e1, e2], [e1, e3], [e1, e4], [e1, e5], [e1, e6], [e1, e8], [e2, e3], [e2, e4], [e2, e5], [e2, e6], [e2, e8], [e3, e4], [e3, e5], [e3, e6], [e3, e8], [e4, e5], [e4, e6], [e4, e8], [e5, e6], [e5, e8], [e6, e8]]
+
+# of uncovered target sequences = 69
+[[e1, e7], [e1, e9], [e1, e10], [e2, e1], [e2, e7], [e2, e9], [e2, e10], [e3, e1], [e3, e2], [e3, e7], [e3, e9], [e3, e10], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e1], [e5, e2], [e5, e3], [e5, e4], [e5, e7], [e5, e9], [e5, e10], [e6, e1], [e6, e2], [e6, e3], [e6, e4], [e6, e5], [e6, e7], [e6, e9], [e6, e10], [e7, e1], [e7, e2], [e7, e3], [e7, e4], [e7, e5], [e7, e6], [e7, e8], [e7, e9], [e7, e10], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e5], [e9, e6], [e9, e7], [e9, e8], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e5], [e10, e6], [e10, e7], [e10, e8], [e10, e9]]
+Starting Phase Time : 0.116 sec
+Extension Phase Time : 0.755 sec
+Generated Sequence : 
+[e1, e7, e2, e9, e5, e6, e8]
+Covered target sequences : 
+[[e1, e7], [e1, e9], [e2, e9], [e7, e2], [e7, e5], [e7, e6], [e7, e8], [e7, e9], [e9, e5], [e9, e6], [e9, e8]]
+
+# of uncovered target sequences = 58
+[[e1, e10], [e2, e1], [e2, e7], [e2, e10], [e3, e1], [e3, e2], [e3, e7], [e3, e9], [e3, e10], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e1], [e5, e2], [e5, e3], [e5, e4], [e5, e7], [e5, e9], [e5, e10], [e6, e1], [e6, e2], [e6, e3], [e6, e4], [e6, e5], [e6, e7], [e6, e9], [e6, e10], [e7, e1], [e7, e3], [e7, e4], [e7, e10], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e5], [e10, e6], [e10, e7], [e10, e8], [e10, e9]]
+Starting Phase Time : 7.759 sec
+Extension Phase Time : 0.2 sec
+Generated Sequence : 
+[e5, e1, e2, e7, e10, e6, e8]
+Covered target sequences : 
+[[e1, e10], [e2, e7], [e2, e10], [e5, e1], [e5, e2], [e5, e7], [e5, e10], [e7, e10], [e10, e6], [e10, e8]]
+
+# of uncovered target sequences = 48
+[[e2, e1], [e3, e1], [e3, e2], [e3, e7], [e3, e9], [e3, e10], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e3], [e5, e4], [e5, e9], [e6, e1], [e6, e2], [e6, e3], [e6, e4], [e6, e5], [e6, e7], [e6, e9], [e6, e10], [e7, e1], [e7, e3], [e7, e4], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e5], [e10, e7], [e10, e9]]
+Starting Phase Time : 1.664 sec
+Extension Phase Time : 0.024 sec
+Generated Sequence : 
+[e6, e1, e2, e3, e9, e8]
+Covered target sequences : 
+[[e3, e9], [e6, e1], [e6, e2], [e6, e3], [e6, e9]]
+
+# of uncovered target sequences = 43
+[[e2, e1], [e3, e1], [e3, e2], [e3, e7], [e3, e10], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e3], [e5, e4], [e5, e9], [e6, e4], [e6, e5], [e6, e7], [e6, e10], [e7, e1], [e7, e3], [e7, e4], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e5], [e10, e7], [e10, e9]]
+Starting Phase Time : 30.864 sec
+Extension Phase Time : 0.019 sec
+Generated Sequence : 
+[e1, e3, e2, e10, e5, e6, e8]
+Covered target sequences : 
+[[e3, e2], [e3, e10], [e10, e5]]
+
+# of uncovered target sequences = 40
+[[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e3], [e5, e4], [e5, e9], [e6, e4], [e6, e5], [e6, e7], [e6, e10], [e7, e1], [e7, e3], [e7, e4], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Starting Phase Time : 0.355 sec
+Extension Phase Time : 0.032 sec
+Generated Sequence : 
+[e1, e5, e3, e2, e4, e6, e8]
+Covered target sequences : 
+[[e5, e3], [e5, e4]]
+
+# of uncovered target sequences = 38
+[[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e9], [e6, e4], [e6, e5], [e6, e7], [e6, e10], [e7, e1], [e7, e3], [e7, e4], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Starting Phase Time : 0.402 sec
+Extension Phase Time : 0.073 sec
+Generated Sequence : 
+[e1, e6, e7, e2, e10, e8]
+Covered target sequences : 
+[[e6, e7], [e6, e10]]
+
+# of uncovered target sequences = 36
+[[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e9], [e6, e4], [e6, e5], [e7, e1], [e7, e3], [e7, e4], [e8, e1], [e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Starting Phase Time : 0.319 sec
+Extension Phase Time : 0.004 sec
+Generated Sequence : 
+[e1, e8, e2, e3, e4, e5, e6]
+Covered target sequences : 
+[[e8, e2], [e8, e3], [e8, e4], [e8, e5], [e8, e6]]
+
+# of uncovered target sequences = 31
+[[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e9], [e6, e4], [e6, e5], [e7, e1], [e7, e3], [e7, e4], [e8, e1], [e8, e7], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Starting Phase Time : 0.08 sec
+Extension Phase Time : 0.051 sec
+Generated Sequence : 
+[e1, e8, e7, e2, e4, e5, e6]
+Covered target sequences : 
+[[e7, e4], [e8, e7]]
+
+# of uncovered target sequences = 29
+[[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e5, e9], [e6, e4], [e6, e5], [e7, e1], [e7, e3], [e8, e1], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Starting Phase Time : 2.518 sec
+Extension Phase Time : 0.002 sec
+Generated Sequence : 
+[e1, e2, e3, e5, e9, e6, e8]
+Covered target sequences : 
+[[e5, e9]]
+
+# of uncovered target sequences = 28
+[[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e6, e4], [e6, e5], [e7, e1], [e7, e3], [e8, e1], [e8, e9], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Starting Phase Time : 0.015 sec
+Extension Phase Time : 0.002 sec
+Generated Sequence : 
+[e1, e2, e3, e8, e9, e5, e6]
+Covered target sequences : 
+[[e8, e9]]
+
+# of uncovered target sequences = 27
+[[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e6, e4], [e6, e5], [e7, e1], [e7, e3], [e8, e1], [e8, e10], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Starting Phase Time : 0.002 sec
+Extension Phase Time : 0.002 sec
+Generated Sequence : 
+[e1, e2, e3, e8, e10, e5, e6]
+Covered target sequences : 
+[[e8, e10]]
+
+# of uncovered target sequences = 26
+[[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e6, e4], [e6, e5], [e7, e1], [e7, e3], [e8, e1], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Starting Phase Time : 1.871 sec
+
+Generation is Finished.
+26 Targets are uncoverable, under the three types of constraints!
+  Unable to cover target sequences : [[e2, e1], [e3, e1], [e3, e7], [e4, e1], [e4, e2], [e4, e3], [e4, e7], [e4, e9], [e4, e10], [e6, e4], [e6, e5], [e7, e1], [e7, e3], [e8, e1], [e9, e1], [e9, e2], [e9, e3], [e9, e4], [e9, e7], [e9, e10], [e10, e1], [e10, e2], [e10, e3], [e10, e4], [e10, e7], [e10, e9]]
+Elapsed Generation Time : 47.164 sec , it part of Starting Phases Time : 45.968 sec , and it part of Extension Phases Time : 1.182 sec 
+
+Final Results:
+# of generated sequences = 12 , in lengths ( 7 7 7 6 7 7 6 7 7 7 7 7 )
+[e1, e2, e3, e4, e5, e6, e8]
+[e1, e7, e2, e9, e5, e6, e8]
+[e5, e1, e2, e7, e10, e6, e8]
+[e6, e1, e2, e3, e9, e8]
+[e1, e3, e2, e10, e5, e6, e8]
+[e1, e5, e3, e2, e4, e6, e8]
+[e1, e6, e7, e2, e10, e8]
+[e1, e8, e2, e3, e4, e5, e6]
+[e1, e8, e7, e2, e4, e5, e6]
+[e1, e2, e3, e5, e9, e6, e8]
+[e1, e2, e3, e8, e9, e5, e6]
+[e1, e2, e3, e8, e10, e5, e6]
+===========================
+
